@@ -6,7 +6,7 @@ public class Cliente {
     public static void main(String[] args) {
         HttpResponse<String> response = null;
         try {
-            response = Unirest.get("operation=sin&number=3.14")
+            response = Unirest.get("https://serverfinal1.herokuapp.com/lee?operation=tan&number=3.14")
                     .asString();
         } catch (UnirestException e) {
             e.printStackTrace();
