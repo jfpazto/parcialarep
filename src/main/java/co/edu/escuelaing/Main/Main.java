@@ -18,7 +18,7 @@ public class Main {
         get("/lee",(req,res)->{
             String operation = req.queryParams("operation");
             String number = req.queryParams("number");
-            JSONObject jsonObject = new JSONObject(Httpservice.get(operation,number));
+            JSONObject jsonObject = new JSONObject(Httpservice.entrega(operation,number));
             return jsonObject;
         });
 
